@@ -1,0 +1,25 @@
+*/import java.util.Scanner;
+public class BarcelonaProject1 {
+
+public static void main(String[] args) {
+      Scanner input = new Scanner( System.in);
+      System.out.println("Performance Task");
+      System.out.println("Enter 1st Activity");
+      int a = input.nextInt();
+      System.out.println("Enter 2nd Activity");
+      int b = input.nextInt();
+      System.out.println("Enter 3rd Acitivity");
+      int c = input.nextInt();
+        
+      int sum;
+      sum = a + b + c;
+      double  per;
+      per = sum * 0.60;
+      int ave;
+      ave = sum / 3;
+                
+      System.out.println("Percentage is:" + per);
+      System.out.println("Average is:" + ave);
+
+   }
+}
