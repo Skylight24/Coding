@@ -1,0 +1,38 @@
+ if(jTextField1.getText().equals(0)||jTextField2.getText().equals(0)||jTextField3.getText().equals(0))
+        {
+            JOptionPane.showMessageDialog(this, "please input all data");
+        }
+        else
+        {
+            String data [] = {jTextField1.getText(),jTextField2.getText(),jTextField3.getText()};
+            
+            DefaultTableModel tblModel= (DefaultTableModel)jTable1.getModel();
+            
+            tblModel.addRow(data);
+            JOptionPane.showMessageDialog(this, "Date added Suyccesfully");
+        }
+           
+    }                                        
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        // TODO add your handling code here:
+        DefaultTableModel tblModel = (DefaultTableModel)jTable1.getModel();
+        
+         if(jTable1.getSelectedColumn()==1)
+               {
+             tblModel.removeRow(jTable1.getSelectedRow());
+                } 
+         else
+           {
+                 if(jTable1.getRowCount()==0)
+                 {
+                    JOptionPane.showMessageDialog(this, "Table is empty");
+                 }
+                 else
+                 {
+                JOptionPane.showMessageDialog(this, "Pleae Selets Single Row For Delete");
+                 
+                 }
+           }
+                 
+                 
