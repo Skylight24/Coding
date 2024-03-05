@@ -1,0 +1,5 @@
+String data[] = {jTextField1.getText()};
+      if(jTextField1.getText().equalsIgnoreCase("Hello"))
+      {
+      JOptionPane.showMessageDialog(this, "Hi Goodmorning!");
+      }
